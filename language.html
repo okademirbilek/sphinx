@@ -1,0 +1,232 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Internationalization of QGIS Plugins &mdash; Save_attributes 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Unit Test of Save_attributes Plugin" href="unit_test.html" />
+    <link rel="prev" title="Save_attributes Tutorial" href="Readme.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Save_attributes
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="docs/save_attributes.html">save_attributes module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/plugin_upload.html">plugin_upload module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Readme.html">readme</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">language support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit_test.html">unit_test</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Save_attributes</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Internationalization of QGIS Plugins</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/language.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="internationalization-of-qgis-plugins">
+<h1>Internationalization of QGIS Plugins<a class="headerlink" href="#internationalization-of-qgis-plugins" title="Permalink to this headline">¶</a></h1>
+<p><strong>Our GitHub link :</strong>
+<a class="reference external" href="https://github.com/okademirbilek/GMT-456-GIS-Programming">https://github.com/okademirbilek/GMT-456-GIS-Programming</a></p>
+<p><strong>-First we need to install Qt and Qt Linguist</strong></p>
+<a class="reference internal image-reference" href="_images/Qt_logo.png"><img alt="_images/Qt_logo.png" src="_images/Qt_logo.png" style="width: 240px;" /></a>
+<img alt="_images/qtlin.jpg" src="_images/qtlin.jpg" />
+<p>Qt : <a class="reference external" href="https://www.qt.io/download">https://www.qt.io/download</a></p>
+<p>Qt Linguist : <a class="reference external" href="https://github.com/lelegard/qtlinguist-installers/releases">https://github.com/lelegard/qtlinguist-installers/releases</a></p>
+<p>2-Create the <strong>saveattributes.pro</strong> file under <strong>i18nfolder</strong> of the plugin</p>
+<img alt="_images/ss1.jpg" src="_images/ss1.jpg" />
+<p>3-The command <code class="docutils literal notranslate"><span class="pre">lupdatesaveattributes.procreates</span></code> the relevant .ts files. (under Qt command window)</p>
+<img alt="_images/ss3.jpg" src="_images/ss3.jpg" />
+<p>4-Open Qt Linguist to process the .ts files and start translating</p>
+<img alt="_images/ss2.jpg" src="_images/ss2.jpg" />
+<p>5-Finally, run the command <code class="docutils literal notranslate"><span class="pre">lrelease</span> <span class="pre">saveattributes.proto</span></code> obtain the .qm files that are used in QGIS.</p>
+<p>6-<strong>English to Turkish</strong></p>
+<img alt="_images/qgiss.jpg" src="_images/qgiss.jpg" />
+<p>7-<strong>English to German</strong></p>
+<img alt="_images/dess.jpg" src="_images/dess.jpg" />
+<img alt="_images/almancass.jpg" src="_images/almancass.jpg" />
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="unit_test.html" class="btn btn-neutral float-right" title="Unit Test of Save_attributes Plugin" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Readme.html" class="btn btn-neutral float-left" title="Save_attributes Tutorial" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Okan Demirbilek.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

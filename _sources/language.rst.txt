@@ -1,0 +1,42 @@
+
+Internationalization of QGIS Plugins 
+=========================
+
+**Our GitHub link :**
+https://github.com/okademirbilek/GMT-456-GIS-Programming
+
+**-First we need to install Qt and Qt Linguist**
+
+.. image:: images/Qt_logo.png  
+	:width: 240
+
+.. image:: images/qtlin.jpg  	
+
+Qt : https://www.qt.io/download 
+
+Qt Linguist : https://github.com/lelegard/qtlinguist-installers/releases
+	
+
+2-Create the **saveattributes.pro** file under **i18nfolder** of the plugin
+
+.. image:: images/ss1.jpg  	
+
+3-The command ``lupdatesaveattributes.procreates`` the relevant .ts files. (under Qt command window)
+
+.. image:: images/ss3.jpg  
+
+4-Open Qt Linguist to process the .ts files and start translating
+
+.. image:: images/ss2.jpg  
+
+5-Finally, run the command ``lrelease saveattributes.proto`` obtain the .qm files that are used in QGIS.
+
+6-**English to Turkish** 
+
+.. image:: images/qgiss.jpg  
+
+7-**English to German** 
+
+.. image:: images/dess.jpg 
+
+.. image:: images/almancass.jpg  

@@ -1,0 +1,252 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Save_attributes Tutorial &mdash; Save_attributes 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Internationalization of QGIS Plugins" href="language.html" />
+    <link rel="prev" title="plugin_upload module" href="docs/plugin_upload.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Save_attributes
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="docs/save_attributes.html">save_attributes module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/plugin_upload.html">plugin_upload module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">readme</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#first-part"><strong>First Part</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#second-part"><strong>Second Part</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#third-part"><strong>Third Part</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="language.html">language support</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Save_attributes</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Save_attributes Tutorial</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/Readme.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="save-attributes-tutorial">
+<h1>Save_attributes Tutorial<a class="headerlink" href="#save-attributes-tutorial" title="Permalink to this headline">¶</a></h1>
+<p><strong>Our GitHub link :</strong></p>
+<p><a class="reference external" href="https://github.com/okademirbilek/GMT-456-GIS-Programming">https://github.com/okademirbilek/GMT-456-GIS-Programming</a></p>
+<p><a class="reference external" href="https://github.com/bcanplt/GMT-456-GIS-Programming">https://github.com/bcanplt/GMT-456-GIS-Programming</a></p>
+<blockquote>
+<div><dl class="simple">
+<dt>-This plugin performs various operations according to the layer types (point, line, polygon) you enter.</dt><dd><p>In this tutorial you can find the features of the plugin and how you should use it.</p>
+</dd>
+</dl>
+</div></blockquote>
+<p>1-User interface of Save Attributes plugin</p>
+<img alt="_images/gui.jpg" src="_images/gui.jpg" />
+<p><strong>This Plugin contain 3 parts</strong></p>
+<div class="section" id="first-part">
+<h2><strong>First Part</strong><a class="headerlink" href="#first-part" title="Permalink to this headline">¶</a></h2>
+<p>-When the user enter “point” layer shape file the plugin finds
+the maximum and minimum distance of the points and it draws
+a single line</p>
+<img alt="_images/nokta.jpg" src="_images/nokta.jpg" />
+<img alt="_images/nokta2.jpg" src="_images/nokta2.jpg" />
+</div>
+<div class="section" id="second-part">
+<h2><strong>Second Part</strong><a class="headerlink" href="#second-part" title="Permalink to this headline">¶</a></h2>
+<p>-When the user enter “line” layer shape file, the plugin finds
+the shortest path of the line and assign start,end and middle
+point of the line</p>
+<img alt="_images/line1.jpg" src="_images/line1.jpg" />
+<img alt="_images/line2.jpg" src="_images/line2.jpg" />
+</div>
+<div class="section" id="third-part">
+<h2><strong>Third Part</strong><a class="headerlink" href="#third-part" title="Permalink to this headline">¶</a></h2>
+<p>-When the user enter “polygon” layer shape file, the plugin finds
+the centroids of the polygons and show the centroits as a point</p>
+<img alt="_images/polygon1.jpg" src="_images/polygon1.jpg" />
+<img alt="_images/polygon2.jpg" src="_images/polygon2.jpg" />
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="language.html" class="btn btn-neutral float-right" title="Internationalization of QGIS Plugins" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="docs/plugin_upload.html" class="btn btn-neutral float-left" title="plugin_upload module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Okan Demirbilek.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

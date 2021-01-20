@@ -1,0 +1,23 @@
+
+Unit Test of Save_attributes Plugin
+===================================
+
+-First we change some imports lines in "test_save_attributes_dialog.py" file
+
+.. image:: images/unit1.jpg
+
+-Second we create "testfile.shp" file under the "data" directory to test our code
+
+.. image:: images/unit2.jpg
+
+
+3-We add utilites.py to import our test shp file
+
+4- We write the  "testpolygon" function and when we run the test it controls 
+if the function finds the centroids of the polygon correctly or not.  
+
+.. image:: images/unit3.jpg
+
+5-if we type wrong value like "0" it fails the test
+
+.. image:: images/unit4.jpg

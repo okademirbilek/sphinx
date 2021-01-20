@@ -1,0 +1,7 @@
+plugin\_upload module
+=====================
+
+.. automodule:: plugin_upload
+   :members:
+   :undoc-members:
+   :show-inheritance:
